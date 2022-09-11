@@ -3,11 +3,12 @@
 
 #include "./array.cpp"
 #include "./arithmetic.cpp"
+#include "./assignment_operators.cpp"
 
 int main(int argc, char *argv[]) {
   QCoreApplication a(argc, argv);
 
-  arithmetic();
+  assignment_op();
 
   return QCoreApplication::exec();
 }
