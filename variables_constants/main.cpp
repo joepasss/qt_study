@@ -4,11 +4,12 @@
 #include "./array.cpp"
 #include "./arithmetic.cpp"
 #include "./assignment_operators.cpp"
+#include "./logical_op.cpp"
 
 int main(int argc, char *argv[]) {
   QCoreApplication a(argc, argv);
 
-  assignment_op();
+  logical();
 
   return QCoreApplication::exec();
 }
