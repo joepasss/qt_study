@@ -12,3 +12,12 @@ void couts () {
   cout << endl;
   cout << flush;
 }
+
+void errors() {
+  cout << "standard out" << endl;
+  cerr << "error out" << endl;
+}
+
+void outputs() {
+  errors();
+}
