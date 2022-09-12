@@ -2,11 +2,12 @@
 #include <QDebug>
 
 #include "./outputs.cpp"
+#include "./inputs.cpp"
 
 int main(int argc, char *argv[]) {
   QCoreApplication a(argc, argv);
 
-  couts();
+  inputs();
 
   return QCoreApplication::exec();
 }
