@@ -18,6 +18,19 @@ void errors() {
   cerr << "error out" << endl;
 }
 
+void qDebugs() {
+  int age{0};
+  qInfo() << "Enter your age";
+  cin >> age;
+
+  qInfo() << "You are " << age << "year old.";
+
+  qInfo() << "information";
+  qDebug() << "Debug";
+  qCritical() << "Critical";
+  qFatal("Test Crash !!!");   // crash application
+}
+
 void outputs() {
-  errors();
+  qDebugs();
 }
