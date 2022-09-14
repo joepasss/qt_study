@@ -14,8 +14,13 @@ void test() {
 int main(int argc, char *argv[]) {
   QCoreApplication a(argc, argv);
 
-  test();
-  test2();
+  int age = 0;
+
+  qInfo() << "Enter your age: ";
+  cin >> age;
+
+  qInfo() << "for cat years: " << catYears(age);
+  qInfo() << "for dog years: " << dogYears(age);
 
   return QCoreApplication::exec();
 }
