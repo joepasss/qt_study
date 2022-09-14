@@ -1,6 +1,4 @@
-int calc(int offset, int age) {
-  return offset * age;
-}
+#include "function_flow.cpp"
 
 int catYears(int age) {
   return calc(9, age);

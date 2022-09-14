@@ -5,27 +5,16 @@
 
 using namespace std;
 
-void test2();
-void test() {
-  qInfo() << "Hello from test";
-  test2();
-}
-
 int main(int argc, char *argv[]) {
   QCoreApplication a(argc, argv);
 
-  int age = 0;
-
+  int age;
   qInfo() << "Enter your age: ";
   cin >> age;
 
-  qInfo() << "for cat years: " << catYears(age);
-  qInfo() << "for dog years: " << dogYears(age);
+  qInfo() << "Dog: " << dogYears(age);
+  qInfo() << "Cat: " << catYears(age);
 
   return QCoreApplication::exec();
-}
-
-void test2() {
-  qInfo() << "Hello from test2";
 }
 
