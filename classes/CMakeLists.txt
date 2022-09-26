@@ -12,7 +12,7 @@ find_package(Qt6 COMPONENTS
         Core
         REQUIRED)
 
-add_executable(classes main.cpp animal.cpp animal.h)
+add_executable(classes main.cpp animal.cpp animal.h laptop.cpp laptop.h)
 target_link_libraries(classes
         Qt::Core
         )
