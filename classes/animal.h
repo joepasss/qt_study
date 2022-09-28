@@ -12,11 +12,13 @@
 class Animal : public QObject {
   Q_OBJECT
 
-  // private area
 
 public:
   explicit Animal(QObject *parent = nullptr);
-  void speak(QString const message);
+
+  bool isAlive() {
+    return true;
+  };
 
 private:
 signals:
