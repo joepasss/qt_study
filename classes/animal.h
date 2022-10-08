@@ -8,15 +8,15 @@
 #include <QDebug>
 #include <QObject>
 
-
-class Animal : public QObject {
+class Animal : public QObject
+{
   Q_OBJECT
-
 
 public:
   explicit Animal(QObject *parent = nullptr);
 
-  bool isAlive() {
+  bool isAlive()
+  {
     return true;
   };
 
@@ -24,5 +24,4 @@ private:
 signals:
 };
 
-
-#endif//CLASSES_ANIMAL_H
+#endif // CLASSES_ANIMAL_H
