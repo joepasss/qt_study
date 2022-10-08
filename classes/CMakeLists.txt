@@ -12,8 +12,8 @@ find_package(Qt6 COMPONENTS
         Core
         REQUIRED)
 
-add_executable(classes main.cpp animal.cpp animal.h laptop.cpp laptop.h Mammal.cpp Mammal.h)
-target_link_libraries(classes
+add_executable(${PROJECT_NAME} main.cpp animal.cpp animal.h laptop.cpp laptop.h Mammal.cpp Mammal.h)
+target_link_libraries(${PROJECT_NAME}
         Qt::Core
         )
 

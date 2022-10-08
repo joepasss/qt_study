@@ -2,3 +2,5 @@
 **/.idea
 **/cmake-build-debug
 **/.clang-format
+**/out/build
+**/out
